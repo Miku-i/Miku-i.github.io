@@ -2,31 +2,30 @@
 layout: index
 title: 星合の空
 ---
-## Contact
 
-- Address: **Huzhou, China**
-- Phone: **+86 15372241585**
+## 联系
+
+
+- 家乡: **江苏, 中国**
 - E-mail:
-  - **949498442@qq.com**
-- WeChat: **WjwHxq2497**
-- QQ: **949498442**
-- Blog: **<https://dbljw.github.io>**
+  - **1375696279@qq.com**
+- QQ: 1375696279
+- Blog(另一个): **<https://miku-i.github.io/blok.github.io/>**
 
-## Education
+## 爱好
 
-Shaoxing vocational and technical college, Shaoxing, Sept. 2017 - Jul. 2020(expected)
+- 游戏
+- 动漫
+- c语言
 
-- Bachelor of Computer Science (Supercomputer Class)
-  - Principle of Supercomputer
-  - Parallel and Distributed Computing
-  - High Performance Computing
 
-## Skill
 
-- **PHP**, Familiar
-- **Markdown**, Familiar
-- **Linux**, Familiar&Learning
-- **Git**, Familiar
-- **VSCode**, Familiar
+## 技能
 
-  ​
+- **HTHL,**熟悉
+- **Markdown**, 熟悉
+- **Linux**, 熟悉&学习
+- **Git**, 熟悉
+- **c**, 熟悉
+
+  
