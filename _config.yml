@@ -179,8 +179,8 @@ sidebar:
   avatar: # 侧边栏显示的头像
     enable: true
     img: //timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1576323794624&di=83430d4a5433908b91d6aee4356a0777&imgtype=0&src=http%3A%2F%2Fpic4.zhimg.com%2F50%2Fv2-a763daa0fd9dd56c6d4b6412cac68211_hd.jpg # 头像的地址
-    info: <br/>我是一个<br/>洋葱 # 头像背后的信息
-  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=2&id=1406311852&auto=0&height=32"></iframe>'
+    info: <br/>满目柔情皆是你<br/> # 头像背后的信息
+  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=3137277355&auto=1&height=90"></iframe>'
   social:
   - title: 1375696279@qq.com # email
     href: mailto:1375696279@qq.com
@@ -242,8 +242,6 @@ sidebar:
 index:
   showtag:
   - 人生经验
-  - ICPC模板
-  - 水野爱
 
 post:
   meta:

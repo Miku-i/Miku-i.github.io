@@ -1,0 +1,123 @@
+# react
+
+
+
+## 安装及常用命令
+
+- 安装命令
+
+  - npx create-react-app my-app
+  - cd my-app
+  - npm start
+
+  
+
+  
+
+  - npm install axios  **ajax**
+  - npm install react-router-dom   **路由**
+  - npm install mockjs   **拦截ajax**
+
+
+
+
+
+
+
+## 模版
+
+```javascript
+import React, { Component } from "react";
+import "./style.css"
+import axios from 'axios';
+import qs from "qs"
+import { Link } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
+
+// app导入
+function App(){
+
+
+    return(
+        <div>
+        </div>
+    )
+}
+
+
+// 路由
+function App() {
+    return (
+        <HashRouter>
+            <Switch>
+
+
+                <Route exact path="/">
+                </Route>
+
+
+            </Switch>
+        </HashRouter>
+    )
+}
+
+// 上下文消费者
+function App() {
+
+    return (
+        <AuthContext.Consumer>
+            {(val) => {
+                console.log(val)
+            }}
+        </AuthContext.Consumer>
+
+    )
+}
+
+function App() {
+
+    return (
+        <AuthContext.Provider value={this.state}>
+               
+        </AuthContext.Provider>
+
+    )
+}
+
+
+export default App
+```
+
+
+
+
+
+```javascript
+let token = localStorage.getItem('token');
+        axios.get('url' + '?token=' + token, {
+            params: {
+              
+            }
+        }).then((res) => {
+            console.log(res)
+        }).catch((error) => {
+            console.log(error)
+        });
+
+
+				axios({
+            method: 'Post',
+            url: 'url' + '?token=' + token,
+            headers: { 'Content-Type': '' },
+            data: qs.stringify({
+                'id': id
+            })
+        }).then((res) => {
+            console.log(res)
+        }).catch((error) => {
+            console.log(error)
+        })
+
+
+```
+
