@@ -11,7 +11,6 @@ title: 个人博客
 - E-mail:
   - **1809310379@qq.com**
 - QQ: 1809310379
-- Blog(另一个): **<https://miku-i.github.io/blok.github.io/>**
 - wechat:**Sendlysi**
 
 ## 爱好

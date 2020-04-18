@@ -1,3 +1,10 @@
+---
+layout: post
+author: miku-i
+category: MarkDown
+date: 2020-4-18
+---
+
 # Java使用JDBC操作MySQL数据库
 
 -  选择版本 `mysql-connector-java-5.1.48.jar`
