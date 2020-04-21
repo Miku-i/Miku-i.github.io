@@ -1,0 +1,229 @@
+.not-subscribed{
+    height: 550px;
+    overflow: hidden;
+}
+
+
+
+#detail #detail-top{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+
+}
+
+#detail #detail-top span{
+    margin-left: 20px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+#detail #detail-title span{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#detail #detail-brief-introduction span{
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 5px 5px;
+    background: #cccccc;
+}
+
+#detail #detail-content{
+    margin: 5px 10px;
+}
+
+#detail #detail-content .detail-content-xiaobian{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#detail #detail-content span{
+    display: inline-block;
+}
+
+
+/*订阅框样式*/
+
+#detail #article-subscription{
+    width: 100%;
+    height: 220px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#detail #article-subscription span{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    background: #ffffff;
+    line-height: 40px;
+}
+
+#detail #article-subscription .subscribe-content{
+    width: 100%;
+    height: 180px;
+    background: #0077aa;
+}
+
+#detail #article-subscription .subscribe-content .subscribe-content-span{
+    background: #0077aa;
+    color: #ffffff;
+}
+
+#detail #article-subscription .subscribe-content button{
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 10%;
+    background: #b3d4fc;
+}
+
+#detail #article-subscription .subscribe-content ul li{
+    display: inline-block;
+    width: 20%;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 45%;
+
+}
+
+#detail #article-subscription .subscribe-content ul li a{
+    color: #ffffff;
+}
+
+
+/*评论样式*/
+#detail #comment{
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#detail #comment .xiao-comment{
+    width: 90%;
+    height: 50px;
+    background: #ffffff;
+    margin: 0 auto;
+
+}
+
+#detail #comment .xiao-comment input{
+    width: 40%;
+    margin-top:10px;
+    height: 30px;
+    font-size: 16px;
+    background: #b2b2b2;
+    border-radius: 5px;
+}
+
+#detail #comment ul{
+    margin-top:10px;
+}
+
+#detail #comment ul li{
+    margin: 0 10px 0 10px;
+}
+
+/*全部评论样式*/
+#detail #comment-detail{
+    width: 100%;
+    height: 550px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+}
+
+#detail #comment-detail #comment-detail-top{
+    width: 100%;
+    height: 40px;
+
+}
+
+#detail #comment-detail #comment-detail-top span{
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0 5px;
+    float: left;
+}
+
+#detail #comment-detail #comment-detail-top h2{
+    margin-left: 25%;
+}
+
+#detail #comment-detail .comment-map{
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    margin-top: 15px;
+    padding-bottom: 5px;
+
+}
+
+#detail #comment-detail .comment-map .comment-map-left{
+    height: 80px;
+}
+
+#detail #comment-detail .comment-map .comment-map-left .comment-map-left-img img{
+    border-radius: 50px;
+}
+
+#detail #comment-detail .comment-map .comment-map-reight{
+    width: 75%;
+    margin-left: 20px;
+
+}
+
+#detail #comment-detail .comment-map .comment-map-reight .comment-name{
+    font-size: 14px;
+}
+
+#detail #comment-detail .comment-map .comment-map-reight .comment-from{
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    color:#b2b2b2 ;
+}
+
+#detail #comment-detail .comment-map .comment-map-reight .comment-content{
+    font-size: 14px;
+}
+
+#detail #comment-detail .comment-map .comment-map-reight .comment-sup{
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#detail #comment-detail .comment-map .comment-map-reight .comment-sup ul li{
+    display: inline-block;
+    float: left;
+    padding: 0 8px;
+}
+#detail #comment-detail .comment-map .comment-map-reight .comment-sup ul li img{
+    height: 20px;
+}
+
+#comment-input input{
+    width: 94%;
+    margin-left:3%;
+    margin-bottom: 15px;
+    height: 25px;
+    background: #b2b2b2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

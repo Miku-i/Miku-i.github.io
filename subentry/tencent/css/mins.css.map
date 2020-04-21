@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,MAAM;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,IAAI;;AAEd,0BAA2B;EACzB,YAAY,EAAE,GAAG;;AAEnB,gCAAiC;EAC/B,KAAK,EAAE,MAAM;;AAEf,oBAAqB;EACnB,KAAK,EAAE,IAAI",
+"sources": ["../scss/mins.scss"],
+"names": [],
+"file": "mins.css"
+}

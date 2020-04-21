@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阿里云</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery-3.4.1.js"></script>
+</head>
+<body>
+    <div class="body">
+		<div id="lunbobox">
+			<div class="lunbo">
+				<a><img src="img/view1.jpg"></a>
+				<a><img src="img/view2.jpg"></a>
+				<a><img src="img/view3.jpg"></a>
+				<a><img src="img/view4.jpg"></a>
+				<a><img src="img/view5.jpg"></a>
+			</div>
+			<ul>
+				<li style="background: #ff6a00;"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+        <div class="bottom">
+			<!-- 左侧广告 -->
+            <div class="left">
+                <ul>
+                    <li class="item">
+                        <div class="flex">
+                            <div class="top">新人礼遇</div>
+                            <div class="center">企业级高性能实例低至0.8折入门级实例1C2G89元/年起</div>
+                            <img src="img/1.png">
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="flex">
+                            <div class="top">新人礼遇</div>
+                            <div class="center">企业级高性能实例低至0.8折入门级实例1C2G89元/年起</div>
+                            <img src="img/1.png">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <div class="top">新人礼遇</div>
+                            <div class="center">企业级高性能实例低至0.8折入门级实例1C2G89元/年起</div>
+                            <img src="img/1.png">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- token == null -->
+			<div class="right block">
+                <div class="avatar"><img src="img/avatar.png"></div>
+                <div CLASS="text">Hi!欢迎来到阿里云</div>
+                <div class="button">
+                    <a href="./log.html">登录</a>
+                    <a href="">注册</a>
+                </div>
+                <div class="line"></div>
+                <div class="foot">
+                    <a href="">全民云计算</a>
+                    <span> | </span>
+                    <a href="">免费试用</a>
+                </div>
+            </div>
+			<!-- token != null -->
+            <div class="right hidden">
+                <div class="avatar"><img src="img/avatar.png"></div>
+                <div CLASS="text">Hi! <span></span></div>
+                <div class="button">
+                    <a href="">控制台</a>
+                </div>
+                <div class="line">
+					<span class="span1">阿里云定价</span>
+					<span class="span2">|</span>
+                    <span class="span3">备案专区</span>
+                </div>
+                <div class="foot">
+                    <li>
+                        <div class="tc">0</div>
+                        <div>待付款</div>
+                    </li>
+                    <li>
+                        <div class="tc">0</div>
+                        <div>待续费</div>
+                    </li>
+                    <li>
+                        <div class="tc" id='point'></div>
+                        <div>积分</div>
+                    </li>
+                    <li>
+                        <div class="tc">0</div>
+                        <div>代金券</div>
+                    </li>
+                    <li>
+                        <div class="tc" id="money"></div>
+                        <div>账户余额</div>
+                    </li>
+                    <li>
+                        <div class="tc" id="msg"></div>
+                        <div>站内信</div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function get(){
+			var token = localStorage.getItem('token');
+			if(token != null){
+				$.ajax({
+					type: "GET",
+					dataType: "json",
+					url: "http://playground.it266.com/profile?token="+token,
+					success: function(result){
+						//console.log(result)
+						let userInfo = result.data
+						$(".block").css({ "display": "none" });
+						$(".hidden").css({ "display": "block" });
+						$('.hidden img').attr('src',userInfo.avatar)
+						$('.hidden .text span').text(userInfo.username)
+						$('.hidden #money').text(userInfo.balance)
+						$('.hidden #msg').text(userInfo.message)
+						$('.hidden #point').text(userInfo.point)
+					}
+				});
+			}	
+        }
+        get()
+		
+		var t;
+		var index = 0;
+		//自动播放
+		t = setInterval(play, 3000)
+		function play() {
+		    index++;
+		    if (index > 4) {
+		        index = 0
+		    }
+		    $("#lunbobox ul li").eq(index).css({
+		        "background": "#ff6a00",
+		    }).siblings().css({
+		        "background": "#b5b5b533",
+		    })
+		    $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+		};
+		
+		//点击灰条 图片切换
+		$("#lunbobox ul li").click(function() {
+		    $(this).css({
+		        "background": "#ff6a00",
+		    }).siblings().css({
+		        "background": "#b5b5b533"
+		    })
+		    var index = $(this).index(); 
+		    $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+		});
+    </script>
+</body>
+</html>

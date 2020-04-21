@@ -1,0 +1,259 @@
+body,
+ul,
+ol,
+li,
+img {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: PingFangSC, helvetica neue, hiragino sans gb, arial,
+    microsoft yahei ui, microsoft yahei, simsun, sans-serif !important;
+}
+li {
+  list-style: none;
+}
+a{
+    text-decoration:none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#banner {
+  width: 1000px;
+  height: 320px;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+#banner .img-list li img {
+  position: absolute;
+  transition: all 1s;
+}
+
+#banner .round {
+  position: absolute;
+  left: 40px;
+  top: 280px;
+}
+
+#banner .round ul li {
+  width: 30px;
+  height: 5px;
+  background: rgba(181, 181, 181, 0.2);
+  float: left;
+  margin-left: 10px;
+}
+
+#banner .round ul li:hover {
+  background: rgb(255, 106, 0) !important;
+  cursor: pointer;
+}
+
+#ajax {
+  width: 1000px;
+  height: 284px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ajax div {
+  float: left;
+}
+#ajax-left {
+  width: 680px;
+  height: 244px;
+  padding: 20px 0 20px 0;
+}
+
+#ajax-right {
+  margin-left: 80px;
+  width: 240px;
+  height: 285px;
+}
+
+.box {
+  width: 177px;
+  height: 196px;
+  padding: 24px;
+  position: relative;
+}
+.box:hover {
+  cursor: pointer;
+}
+
+.box-center {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.box-title {
+  width: 177px;
+  height: 23px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #181818;
+  text-align: center;
+}
+.box:hover .box-title {
+  color: #ff6a00;
+}
+.box-content {
+  width: 177px;
+  height: 51px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  line-height: 25px;
+}
+.ajax-img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 120px;
+}
+
+.ajax-right-top {
+  width: 240px;
+  height: 40px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.ajax-right-top img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.login-title {
+  width: 216px;
+  height: 20px;
+  margin: 8px auto 0;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #181818;
+}
+.login-sign {
+  width: 200px;
+  height: 34px;
+  margin: 24px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.login {
+  width: 92px;
+  height: 32px;
+  background: #ff6a00;
+  border: 1px solid #ff6a00;
+  margin: 0 3px;
+  font-family: PingFangSC, helvetica neue, hiragino sans gb, arial,
+    microsoft yahei ui, microsoft yahei, simsun, sans-serif !important;
+  font-size: 12px;
+  text-align: center;
+  line-height: 34px;
+}
+.login a{
+  color: #fff;
+
+}
+.login:hover {
+  cursor: pointer;
+}
+.sign {
+  width: 92px;
+  height: 32px;
+  background: #fff;
+  color: #ff6a00;
+  border: 1px solid #ff6a00;
+  margin: 0 3px;
+  font-family: PingFangSC, helvetica neue, hiragino sans gb, arial,
+    microsoft yahei ui, microsoft yahei, simsun, sans-serif !important;
+  font-size: 12px;
+  text-align: center;
+  line-height: 34px;
+}
+.sign:hover {
+  cursor: pointer;
+  background: #ff6a00;
+  color: #fff;
+}
+
+.login-text{
+    width: 240px;
+    height: 58px;
+    margin: 0 auto;
+    margin-top: 51px;
+    color: #999;
+    line-height: 58px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.login-text a{
+    color:rgb(255, 106, 0);
+}
+.sucess-login{
+  width: 240px;
+  height: 175px;
+  position: relative;
+}
+.console{
+  font-size: 13px;
+  width: 72px;
+  height: 24px;
+  line-height: 24px;
+  float: right;
+  border: 1px solid #ff6a00;
+  color: #ff6a00;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.console:hover{
+  cursor: pointer;
+  border:  1px solid #eee;
+  background: #ff6a00;
+  color: #eee;
+}
+
+.foot{
+  width: 240px;
+  height: 110px;
+  border-top: 1px solid #eee;
+  position: absolute;
+  bottom: 0;
+
+}
+
+.foot-box{
+  width: 60px;
+  height: 35px;
+  padding: 10px;
+  float: left;
+}
+.foot-title{
+  width: 60px;
+  height: 20px;
+  color: #ff6a00;
+  text-align: center;
+  font-size: 13px;
+}
+.foot-text{
+  width: 60px;
+  height: 20px;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}

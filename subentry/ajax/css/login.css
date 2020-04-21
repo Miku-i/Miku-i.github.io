@@ -1,0 +1,37 @@
+.login{
+  width: 350px;
+  height: 350px;
+  margin: 50px auto;
+}
+.login span{
+  font-size: 35px;
+
+}
+.login .err {
+      width: 350px;
+      height: 35px;
+      border: 1px solid  #FF6A00;
+      margin: 10px auto;
+      text-indent: 1em;
+}
+.login .err span{
+      font-size: 20px;
+      color: red;
+      line-height: 35px;
+}
+.login input{
+      width: 350px;
+      height: 50px;
+      margin: 16px auto;
+      font-size: 16px;
+      text-indent: 1em;
+}
+
+.login .ajax-login{
+      width: 350px;
+      height: 60px;
+      background-color:  #FF6A00;
+      font-size: 20px;
+      color:white;
+      margin: 10px auto;
+}

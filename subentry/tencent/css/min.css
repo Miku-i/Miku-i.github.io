@@ -1,0 +1,151 @@
+.bodys {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100%; }
+
+.poster .imgs img {
+  height: 45px; }
+
+.poster .safe img {
+  height: 45px;
+  width: 663px; }
+
+.head_list .nav-item {
+  float: left;
+  list-style: none;
+  width: 57px;
+  text-align: center;
+  line-height: 50px; }
+  .head_list .nav-item a {
+    font-size: 16px; }
+  .head_list .nav-item .more {
+    font-size: 16px; }
+
+.news, .todays {
+  float: left;
+  margin-top: 20px;
+  width: 326px;
+  float: left;
+  margin-right: 0; }
+
+.app_list .app {
+  position: relative;
+  width: 326px;
+  margin: 3px 0 13px; }
+
+.hot_match {
+  width: 326px; }
+  .hot_match .lone img {
+    width: 326px; }
+  .hot_match .today_hot {
+    margin-top: 15px; }
+
+.news_body li {
+  display: block;
+  width: 326px;
+  line-height: 36px; }
+
+.app_list .today_hot .two_img li {
+  width: 158px;
+  padding: 10px 0 12px;
+  font-size: 12px;
+  cursor: pointer; }
+
+.news_body img {
+  width: 158px;
+  min-height: 106px;
+  border-radius: 4px; }
+
+.news_body .img-txt .txt {
+  margin-left: 5px;
+  width: 160px;
+  height: 43px; }
+
+.img-txt .txt a {
+  font-size: 12px !important; }
+
+.news_body .img-txt {
+  padding: 10px 0;
+  height: 120px; }
+
+.news_body .img-txt .txt {
+  margin-left: 5px;
+  width: 160px;
+  height: 43px;
+  line-height: 1; }
+
+.txt_body a {
+  font-size: 12px; }
+.txt_body li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.poster .imgs #raod {
+  position: absolute;
+  bottom: 54px;
+  right: 90px; }
+
+.app_list .app .list .L1 a {
+  margin-right: 12px; }
+
+.app_list .app .list .L4 a {
+  margin-right: 4px; }
+
+.news_body .img {
+  position: relative;
+  width: 158px;
+  height: 120px;
+  margin-right: 0;
+  overflow: hidden; }
+
+.img-txt .txt {
+  white-space: normal; }
+
+.news_body .v-icon {
+  background-position: 0 -499px; }
+
+.news_body .img_say .i-icons {
+  background-position: 0 -549px; }
+
+.hot_match {
+  width: 326px;
+  margin-top: 50px; }
+
+h2 a {
+  font-size: 16px !important; }
+
+.app_list .match_title .line {
+  display: inline-block;
+  width: 1px;
+  border-left: solid 1px #e1e1e1;
+  height: 13px;
+  margin: -3px 0px -2px; }
+
+.app_list .match_title .match_time {
+  color: #1479d7;
+  font-size: 12px; }
+
+.app_list .match_title .match_txt {
+  font-size: 12px; }
+
+.app_list h2 a {
+  font-size: 16px !important; }
+
+.app_list .lone {
+  margin-top: 30px;
+  margin-bottom: 23px; }
+
+.app_list .today_hot .hot_title {
+  margin-top: -17px; }
+
+.head_title .head_search {
+  margin-left: 140px; }
+
+.head_list .nav-item {
+  width: 55px; }
+
+.head_list .more_text .more_list {
+  width: 1000px; }
+
+/*# sourceMappingURL=min.css.map */

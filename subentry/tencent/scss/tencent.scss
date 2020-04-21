@@ -1,0 +1,739 @@
+//设置主题的样式
+.bodys{
+  width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+//初始化
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  height: 100%;
+}
+//第一行title 设置
+//设置
+.head_title{
+  margin-top: 20px;
+  h1,.head_search{
+    float: left;
+  }
+  .head_login{
+    float: right;
+  }
+  margin-bottom: 30px;
+  font-size: 14px;
+  //overflow: hidden;
+  .head_search{
+    position: relative;
+    margin-left: 318px;
+    height: 30px;
+    width: 498px;
+    border: #DFDFDF solid 1px;
+    border-radius: 20px;
+    background: #F3F6F8;
+    //overflow: hidden;
+    .road{
+      cursor: pointer;
+      width: 53px;
+      line-height: 30px;
+      padding-left: 15px;
+      color: #404040;
+      .road_content{
+        font-size: 14px;
+      }
+      .road_content span{
+        content: '';
+        position: absolute;
+        left: 50px;
+        top: 13px;
+        width: 10px;
+        height: 6px;
+        margin-left: 5px;
+        background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/so_arr.png) 1x,
+                url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/so_arr_2x.png) 2x);
+      }
+      ul{
+        position: relative;
+        display: none;
+        width: 60px;
+        padding-right: 8px;
+        margin-left: -15px;
+        background: #FFFFFF;
+        z-index: 200;
+        li{
+          width: 35px;
+          color: #a8a8a8;
+          font-size: 14px;
+          margin: 5px auto;
+          text-align: center;
+          cursor: pointer;
+          border-bottom: 3px solid #FFF;
+        }
+        .fc{
+          color: #404040;
+          border-bottom: 3px solid #f26a0c;
+        }
+        li:hover{
+          color: #404040;
+          border-bottom-color: #f26a0c;
+        }
+      }
+    }
+    .road:hover{
+      span{
+        background-position: 0 -30px;
+      }
+      ul{
+        display: block;
+      }
+    }
+    .search{
+      input{
+        outline: none;
+        border: none;
+        background: none;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+    .buttons{
+      cursor: pointer;
+      float: right;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border: #1479d7 solid 1px ;
+      border-radius:20px;
+      margin-top: -1px;
+      padding: 0 23px;
+      color: #FFF;
+      background-color: #1479d7;
+    }
+    .road,.search{
+      float: left;
+    }
+    .buttons{
+      float: right;
+    }
+  }
+//  div登录内容
+  .head_login{
+    .item,a{
+      width: 40px;
+      display: block;
+      height: 35px;
+      float: left;
+      text-decoration: none
+    }
+    .q-zero{
+      background-image: -webkit-image-set(url('../Image/icons.png') 1x,url('../Image/icons_2x.png') 2x);
+      background-position: 0 -93px;
+      background-repeat: no-repeat;
+    }
+    .q-zero:hover{
+      background-position: 0 -144px;
+    }
+    .q-email{
+      background-image: -webkit-image-set(url('../Image/icons.png') 1x,url('../Image/icons_2x.png') 2x);
+      background-position: 0 -188px;
+    }
+    .q-email:hover{
+      background-position: 0 -238px;
+    }
+    .q-login{
+      a{
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+        border: 1px solid #ededed;
+        color: #60a5e4;
+        background-color: #f5f5f5;
+        font-size: 14px;
+      }
+      a:hover{
+        border-color: #cae0f3;
+      }
+    }
+  }
+}
+.head_title::after {
+  content: '';
+  display:block;
+  clear: both;
+}
+// div 导航栏
+.head_list{
+  position: relative;
+  height: 50px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  background-color: #1479d7;
+  font-size: 18px;
+  border-radius: 3px;
+  .nav-item{
+    float: left;
+    list-style: none;
+    width: 73px;
+    text-align: center;
+    line-height: 50px;
+    a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    a:hover{
+      color: #14539a;
+      background-color: #cbe1ed;
+    }
+  }
+  ul{
+    float: left;
+    overflow: hidden;
+  }
+  .more_text{
+    color: #FFFFFF;
+    .more span{
+      position:absolute;
+      width: 10px;
+      height: 6px;
+      bottom: 20px;
+      right: 30px;
+      background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/nav_arr.png) 1x, url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/nav_arr_2x.png) 2x);
+    }
+    .more_list{
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      width: 1300px;
+      line-height: 32px;
+      background-color: #f9fbfc;
+      z-index: 100;
+      .text-list{
+        padding: 13px 0;
+        border: 1px solid #dfdfdf;
+        border-top: none;
+        padding-left: 19px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        li a{
+          color: #455569;
+          &:hover{
+            color: #1479d7;
+          }
+        }
+      }
+    }
+    &:hover{
+      .more span{
+        background-position: 0 -30px;
+      }
+      .more_list{
+        display: block;
+      }
+    }
+  }
+}
+.poster  .imgs img{
+  height: 70px;
+}
+//div 广告
+.poster{
+  .safe{
+    float: left;
+    img{
+      width: 830px;
+      height: 70px;
+    }
+    //background-image: url("../Image/C2_NQNW_20191115174802454241.jpg");
+  }
+  .imgs{
+    position: relative;
+    float: right;
+    #raod{
+      width: 24px;
+      height: 4px;
+      position: absolute;
+      bottom:80px;
+      right:90px;
+      li{
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin: 0 2px;
+        background-color: #c3cbd6;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .action{
+        background-color: #6c8fbc;
+      }
+    }
+  }
+  overflow: hidden;
+}
+.txt_body{
+  overflow: hidden;
+  a{
+    font-size: 14px;
+  }
+}
+
+//新闻
+.news,.todays{
+  float: left;
+  margin-top: 20px;
+  width: 400px;
+  float: left;
+  margin-right: 30px;
+}
+.sky_city{
+  .city_title{
+    span{
+      font-size: 18px;
+      color: #222222;
+      font-weight: bold;
+    }
+  }
+  .select{
+    margin-left: 35px;
+    margin-top: 20px;
+    .select1{
+      width: 100px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    .select2{
+      width: 200px;
+      height: 30px;
+    }
+  }
+  .check{
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 140px;
+    input{
+      float: left;
+      display: block;
+      margin-top: 7px;
+    }
+    span{
+      float: left;
+      display: block;
+      color: #60a5e4;
+    }
+  }
+  .submit{
+    margin-top: 10px;
+    text-align: center;
+    .b1{
+        margin-right: 10px;
+        outline: none;
+        background: #1479d7;
+        border: none;
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+        color: #fff;
+    }
+    .b2{
+      outline: none;
+      background: #60a5e4;
+      border: none;
+      width: 80px;
+      height: 30px;
+      border-radius: 15px;
+      color: #fff;
+    }
+  }
+}
+//设置新闻,今日热点左浮
+.news_title{
+  position: relative;
+  height: 43px;
+  line-height: 40px;
+  border-bottom: 1px solid #cae0f3;
+  h2,.shu{
+    float: left;
+    font-size: 20px;
+    a{
+      color: #333;
+    }
+  }
+  .active a{
+    display: inline-block;
+    color: #1479d7;
+    border-bottom: 4px solid #1479d7;
+  }
+  .sky{
+    float: right;
+    .f10{
+      float: left;
+    }
+    .sky_img{
+      background-image:url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/weather/301.svg);
+      width: 25px;
+      height: 25px;
+      margin: 7px 8px 0;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .shu{
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid #e1e1e1;
+    margin:0 20px;
+    margin-top: 10px;
+  }
+  .sky_city{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 440px;
+    height: 207px;
+    line-height: 26px;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    background-color: #f5f8fc;
+    border: 1px solid #cae0f3;
+    z-index: 2;
+    transition: all .5s;
+  }
+  .sky:hover {
+    color: #1479d7;
+    .sky_city{
+      display: block;
+    }
+  }
+}
+//设置新闻主题
+.news_body{
+  a{
+    color: #333333;
+  }
+  .news-top{
+    width: 100%;
+    font-size: 18px;
+    padding: 14px 0 7px;
+    font-weight: bold;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  li{
+    //height: 36px;
+    display: block;
+    width: 440px;
+    line-height: 36px;
+  }
+  .fl{
+    float: left;
+  }
+  .img{
+    position: relative;
+    width: 214px;
+    height: 120px;
+    margin-right: 0;
+    overflow: hidden;
+    a{
+      display: block;
+    }
+  }
+  img{
+    width: 100%;
+    min-height: 120px;
+    border-radius: 4px;
+  }
+  .img-txt{
+    padding: 20px 0;
+    height: 120px;
+    .txt{
+      margin-left: 10px;
+      width: 211px;
+      height: 120px;
+    }
+  }
+  a:hover{
+    color: #1479d7;
+  }
+  .ntitle{
+    color: #253e6d;
+    font-weight: bold;
+  }
+  .line{
+    padding: 0 5px;
+    color: #e9e9e9;
+  }
+  //设置眼界里面的内容
+  .see{
+    .see_title{
+      height: 36px;
+      overflow: hidden;
+      background: url("../Image/hd_bg.png")left 20px no-repeat;
+      h2{
+        margin-top: -3px;
+      }
+      img{
+        min-height: 50px !important;
+        width: 242px;
+        border: 0;
+        vertical-align: top;
+      }
+    }
+
+  }
+  .v-icon{
+    background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons.png) 1x, url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons_2x.png) 2x);
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    background-position: 0 -497px;
+  }
+  .img_say{
+    .imgs_title{
+      height: 36px;
+      overflow: hidden;
+      background: url("../Image/hd_bg.png")left 22px no-repeat;
+      h2{
+        float: left;
+        font-weight: normal;
+        background: #FFFFFF;
+        font-size: 20px;
+        padding-right: 10px;
+        margin-top: 8px;
+        a{
+          color: #1479d7;
+        }
+      }
+    }
+    .i-icons{
+      background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons.png) 1x, url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons_2x.png) 2x);
+      background-repeat: no-repeat;
+      padding-left: 28px;
+      background-position: 0 -546px;
+    }
+  }
+}
+//第3列内容
+.app_list{
+  float: right;
+  margin-top: 20px;
+  //显示的内容
+  .app{
+    position: relative;
+    width: 440px;
+    margin: 3px 0 13px;
+    .list{
+      border: 1px solid #cae0f3;
+      border-left: none;
+      li{
+        height: 39px;
+        line-height: 22px;
+        padding-left: 12px;
+        border-bottom: 1px solid #cae0f3;
+        overflow: hidden;
+        a{
+          display: block;
+          float: left;
+          margin: 8px 14px 0 0;
+          color: #455569;
+        }
+      }
+      .c2{
+        background-color: #f5f8fc;
+      }
+      .q-icons{
+        background-image: -webkit-image-set(url('../Image/icons.png')1x ,url('../Image/icons_2x.png') 2x);
+        background-repeat: no-repeat;
+      }
+      .L1{
+        background-position: right -290px;
+        a{
+          margin-right: 16px;
+        }
+      }
+      .L2{
+        background-position: right -340px;
+        a{
+          margin-right: 13px;
+        }
+      }
+      .L3{
+        background-position: right -386px;
+        a{
+          margin-right: 13px;
+        }
+      }
+      .L4{
+        border: none;
+        .more{
+          width: 28px;
+          color: #FFF;
+          background-color: #b5ccec;
+          padding: 0 10px;
+          border-radius: 12px;
+        }
+        a{
+          margin-right: 16px;
+        }
+        background-position: right -440px;
+      }
+    }
+    .f14{
+      font-size: 14px;
+    }
+    .show{
+      position: absolute;
+      top: 0;
+      left: -480px;
+      width: 480px;
+      z-index: 100;
+      background-color: #FFFFFF;
+      border-left: 1px solid #cae0f3;
+      .list{
+        border: 1px solid #cae0f3;
+        border-right: none;
+        border-left: none;
+        li{
+          a{
+            float: right;
+          }
+        }
+      }
+      .navigation{
+        position: absolute;
+        top: 0;
+        left:-15px;
+        width: 15px;
+        height: 41px;
+        background-color: #0f82ff;
+        .navigation_icons{
+          background-image: -webkit-image-set(url('../Image/icons.png')1x,url('../Image/icons_2x.png')2x);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background-position: 0 -950px!important;
+          width: 6px;
+          height: 10px;
+          margin: -5px 0 0 -3px;
+        }
+      }
+    }
+    a:hover{
+      color: #1479d7!important;
+    }
+  }
+  //隐藏的列表
+  .hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    border-left: 1px solid #cae0f3;
+    transition: all .3s ease-out;
+    .list{
+      border-right: none;
+    }
+    .navigation{
+      position: absolute;
+      top: 0;
+      left:-15px;
+      width: 15px;
+      height: 39px;
+      border: 1px solid #cae0f3;
+      border-right: none;
+      cursor: pointer;
+      .navigation_icons{
+        background-image: -webkit-image-set(url('../Image/icons.png')1x,url('../Image/icons_2x.png')2x);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-position: 0 -850px;
+        width: 6px;
+        height: 10px;
+        margin: -5px 0 0 -3px;
+      }
+    }
+  }
+  .match_title{
+    float: right;
+    a{
+      font-size: 14px;
+    }
+    .match_time{
+      color: #1479d7;
+    }
+    .line{
+      display: inline-block;
+      width: 1px;
+      border-left: solid 1px #e1e1e1;
+      height: 14px;
+      margin: 12px 6px -2px;
+    }
+    .match_txt{
+      background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons.png) 1x, url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons_2x.png) 2x);
+      background-repeat: no-repeat;
+      background-position: right -995px;
+      padding-right: 20px;
+      color: #64788c;
+    }
+  }
+  .lone{
+    margin-top: 30px;
+  }
+  .today_hot{
+    margin-top: 5px;
+    .hot_title{
+      height: 36px;
+      overflow: hidden;
+      background: url(../Image/hd_bg.png) left 22px no-repeat;
+      h2{
+        float: left;
+        font-weight: normal;
+        background: #FFFFFF;
+        font-size: 20px;
+        padding-right: 10px;
+        margin-top: 8px;
+        a{
+          color: #1479d7;
+        }
+      }
+    }
+    .two_img{
+      overflow: hidden;
+      height: 100%;
+      li{
+        width: 214px;
+        padding: 15px 0 10px;
+        font-size: 14px;
+        cursor: pointer;
+        img{
+
+        }
+      }
+      li:nth-of-type(1){
+        float: left;
+      }
+      li:nth-of-type(2){
+        float: right;
+      }
+    }
+  }
+}
+h2 a{
+  font-size: 20px !important;
+}
