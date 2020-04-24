@@ -10,19 +10,19 @@ title: 个人博客
 - 家乡: **江苏, 中国**
 - E-mail:
   - **1809310379@qq.com**
+- **https://github.com/Miku-i/Miku-i.github.io/tree/master/subentry**
 - QQ: 1809310379
 - wechat:**Sendlysi**
 
 ## 爱好
 
-- 游戏
-- 动漫
 - java
+- 全栈
 
 
 ## 技能
 
-- **前段** 熟悉(会用react框架，能够独立完成一个前段项目)
+- **前段** 精通(会用react框架，能够独立完成一个前段项目)
 - **Markdown** 熟悉
 - **Linux** 熟悉(能够熟练使用)
 - **Git** 熟悉
