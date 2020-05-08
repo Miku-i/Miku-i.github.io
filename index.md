@@ -10,7 +10,7 @@ title: 个人博客
 - 家乡: **江苏, 中国**
 - E-mail:
   - **1809310379@qq.com**
-- **https://github.com/Miku-i/Miku-i.github.io/tree/master/subentry**
+- https://github.com/Miku-i/Miku-i.github.io/tree/master/subentry
 - QQ: 1809310379
 - wechat:**Sendlysi**
 
