@@ -7,7 +7,7 @@ date: 2020-4-18
 
 # Spring Boot
 
-- **start.ailiyun.com**  网站创建项目
+- **https://start.aliyun.com/**  网站创建项目
 
 
 
@@ -55,3 +55,6 @@ mybatis.configuration.map-underscore-to-camel-case=true
 
 
 - 管理jar包的文件:pom.xml
+
+http://tbapi.51daodao.cn/root/index/index.html    admin   admin
+
